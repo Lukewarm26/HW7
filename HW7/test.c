@@ -13,7 +13,11 @@ int main()
 {
 
     int sock;
-    char *hostname = "hive2.cs.uwyo.edu";
+
+    char hostname[1024] = '\0';
+    gethostname(hostname, 1023);
+    printf("hostname: %s\n", hostname);
+
     int port = 51100;
 
     sock = serve_socket(hostname, port);
