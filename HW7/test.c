@@ -14,7 +14,7 @@ int main()
 
     int sock;
 
-    char hostname[1024] = '\0';
+    char hostname[1024];
     gethostname(hostname, 1023);
     printf("hostname: %s\n", hostname);
 
