@@ -13,7 +13,7 @@ int main()
 {
 
     int sock;
-    char *hostname = "lucas-MS-7C02";
+    char *hostname = "hive2.cs.uwyo.edu";
     int port = 51100;
 
     sock = serve_socket(hostname, port);
